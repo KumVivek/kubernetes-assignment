@@ -11,7 +11,7 @@
 - **Ingress host**: `api.local` (mapped via Windows hosts file)
 - **Ingress external IP**: `20.204.206.79`
 - **Endpoint**: [http://api.local/records](http://api.local/records)
-- **Screen recording**: (add link after upload)
+- **Screen recording**: https://drive.google.com/file/d/1V42Nta8jLdRn6P7n5rNopSADxObGkJWf/view?usp=sharing
 
 ## Requirement Understanding
 
@@ -230,10 +230,4 @@ Invoke-WebRequest http://api.local/records -Proxy $null | Select-Object -Expand 
   kubectl top pods -l app=api
   kubectl top pods postgres-0
   ```
-
-## Production Considerations
-
-- In production, DB passwords would be sourced from **Azure Key Vault** via Secrets Store CSI Driver, not stored in Kubernetes Secret YAML or git.
-- Use real DNS + TLS (cert-manager + Let's Encrypt) instead of hosts file mapping.
-- Enable Azure Monitor / Container Insights for ongoing FinOps and alerting.
 
