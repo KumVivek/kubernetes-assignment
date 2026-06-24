@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/Api/bin/Release/net8.0
+/.vs/KubernetesAssignment
+/src/Api/obj
+/src/Application/bin/Release/net8.0
+/src/Application/obj
+/src/Domain/bin/Release/net8.0
+/src/Domain/obj
+/src/Infrastructure/bin/Release/net8.0
+/src/Infrastructure/obj
+/UpgradeLog.htm
